@@ -10,34 +10,34 @@ from matplotlib.ticker import MaxNLocator
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
-S = pd.read_excel("CPA.xlsx", sheet_name="S", header=None).values[:, 0]
+S = pd.read_excel("Data.xlsx", sheet_name="S", header=None).values[:, 0]
 # S = S.reshape(S.shape[0], 1)
 print(S.shape)
 
-P = pd.read_excel("CPA.xlsx", sheet_name="P", header=None).values[0][0]
+P = pd.read_excel("Data.xlsx", sheet_name="P", header=None).values[0][0]
 print(P)
 
-F = pd.read_excel("CPA.xlsx", sheet_name="self", header=None).values[:, 0]
+F = pd.read_excel("Data.xlsx", sheet_name="self", header=None).values[:, 0]
 # F = F.reshape(F.shape[0], 1)
 print(F.shape)
 
-V = pd.read_excel("CPA.xlsx", sheet_name="一年产量", header=None).values[:, 0]
+V = pd.read_excel("Data.xlsx", sheet_name="一年产量", header=None).values[:, 0]
 # V = V.reshape(V.shape[0], 1)
 print(V.shape)
 
-E = pd.read_excel("CPA.xlsx", sheet_name="需求", header=None).values[:, 0]
+E = pd.read_excel("Data.xlsx", sheet_name="需求", header=None).values[:, 0]
 # E = E.reshape(E.shape[0], 1)
 print(E.shape)
 
-W = pd.read_excel("CPA.xlsx", sheet_name="经济", header=None).values[:, 0]
+W = pd.read_excel("Data.xlsx", sheet_name="经济", header=None).values[:, 0]
 # W = W.reshape(W.shape[0], 1)
 print(W.shape)
 
-G = pd.read_excel("CPA.xlsx", sheet_name="最大安装容量", header=None).values[:, 0]
+G = pd.read_excel("Data.xlsx", sheet_name="最大安装容量", header=None).values[:, 0]
 # G = G.reshape(G.shape[0], 1)
 print(G.shape)
 
-C = pd.read_excel("CPA.xlsx", sheet_name="减排系数", header=None).values[:, 0]
+C = pd.read_excel("Data.xlsx", sheet_name="减排系数", header=None).values[:, 0]
 # C = C.reshape(C.shape[0], 1)
 print(C.shape)
 
